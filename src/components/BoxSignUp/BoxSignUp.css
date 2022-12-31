@@ -1,0 +1,103 @@
+.box-signup{
+    width: 100%;
+    background-image: url(https://img.freepik.com/fotos-premium/vista-aerea-playa-arena-negra_335224-1275.jpg?w=1380);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(41, 41, 41);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-signup p{
+    font-size: 1rem;
+    font-style: italic;
+    color: white;
+}
+
+.box-signup h2{
+    font-size: 2.5rem;
+    color: white;
+}
+
+form{
+    width: 25%;
+}
+
+.box-inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.box-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: .6rem;
+    width: 100%;
+    text-align: center;
+}
+
+.box-submit h6{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.register, .access-google {
+    padding: .6rem;
+    border-radius: 30px;
+    color: var(--naranja);
+    background-color: var(--color-primario);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signin-redirect{
+    padding: .4rem 1.5rem;
+    border-radius: 30px;
+    color: var(--naranja);
+    background-color: var(--color-primario);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signin-redirect:hover, .register:hover, .access-google:hover{
+    font-style: italic;
+    box-shadow: inset 0 -1px 5px var(--naranja);
+}
+
+@media screen and (max-width: 1000px) {
+    .box-signup h2{
+        font-size: 1.5rem;
+    }
+
+    .box-signup p{
+        font-size: .7rem;
+    }
+    
+    .register, .access-google {
+        padding: .5rem;
+        font-size: .7rem;
+    }
+
+    .signin-redirect{
+        padding: .4rem .5rem;
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .register, .access-google {
+        padding: .8rem;
+    }
+
+    form{
+        width: 50%;
+    }
+}

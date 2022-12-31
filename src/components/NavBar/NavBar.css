@@ -1,0 +1,149 @@
+:root{
+    --color-primario: #24265D;
+    --naranja: #F68712;
+    --celeste: #51ADE5;
+    --azul-claro: #2C3892;
+}
+
+/* --- NAVBAR --- */
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom, black -20%,var(--color-primario) 25%, var(--naranja) 70%, white 150%);
+    height: 15vh;
+}
+
+.logo-img{
+    width: 100px;
+    cursor: pointer;
+}
+
+.dropdown, .user-dropdown, .profile-dropdown{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 100px;
+    cursor: pointer;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.user-dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.profile-dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.dropdown-content p{
+    width: 100%;
+    display: block;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdown-content p:hover{
+    color: var(--naranja);
+    background-color: var(--color-primario);
+}
+
+.picture-Navbar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50% 50%;
+    object-fit: cover;
+    border: 5px groove black;
+}
+
+.picture-Navbar:hover{
+    border: 5px groove var(--naranja);
+}
+
+#logout-link{
+    font-weight: bold;
+    font-style: italic;
+    background-color: var(--color-primario);
+    color: white;
+    padding: 3px 0;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 2px 2px 4px black;
+}
+
+#logout-link:hover{
+    font-style: normal;
+    background-color: var(--naranja);
+    color: black;
+    padding: 3px 0;
+    border-radius: 0px 10 0px 10;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+    .nav{
+        height: 22vh;
+    }
+
+    .dropdown-content{
+        display:list-item;
+        box-shadow: none;
+    }
+
+    .dropdown-content p{
+        background-color: var(--color-primario);
+        color: wheat;
+        border-radius: 20px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 5px 0px;
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+
+    .logo-user, .logo-search{
+        display: none;
+    }
+
+    .dropdown-content, .dropdown-user{
+        margin-top: -5rem;
+    }
+
+    .picture-Navbar{
+        display: none;
+    }
+
+    #logout-link{
+        display: none;
+    }
+
+    .link{
+        background-color: white;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .logo-nav{
+        display: none;
+    }
+}

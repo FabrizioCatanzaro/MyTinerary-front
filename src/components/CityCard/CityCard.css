@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primario: #24265D;
+    --naranja: #F68712;
+    --celeste: #51ADE5;
+    --azul-claro: #2C3892;
+}
+
+/* .containerCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} */
+
+.card-city{
+    width: 20%;
+    margin: 1.2rem 0;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: whitesmoke;
+    align-items: center;
+    padding: .5rem;
+    transition: .5s ease;
+}
+
+.img-cardCity{
+    object-fit: cover;
+    width: 100%;
+    height: 15rem;
+}
+
+.img-cardCity img{
+    height: 100%;
+}
+
+.title-cardCity{
+    font-size: 2rem;
+    color: var(--naranja);
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+
+.continent-cardCity{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: .3rem 0 2rem 0;
+    color: white;
+}
+
+.population-cardCity{
+    color: var(--naranja);
+    font-size: 1rem;
+}
+
+.btnCardHotels{
+    width: 40%;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: var(--naranja);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 1.2rem;
+    text-decoration: none;
+}
+
+
+.card-city:hover{
+    background-color: rgba(0, 0, 0, 0.87);
+    box-shadow: 10px 10px 10px black;
+}
+
+@media screen and (max-width: 1405px){
+    .title-cardCity{
+        font-size: 1.4rem;
+    }
+
+    .btnCardHotels div{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1235px){
+    .card-city{
+        width: 45%;
+    }
+
+    .title-cardCity{
+        font-size: 2rem;
+    }
+
+    .btnCardHotels div{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .card-city{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .title-cardCity{
+        font-size: 1.8rem;
+    }
+
+    .btnCardHotels div{
+        font-size: 15px;
+    }
+}

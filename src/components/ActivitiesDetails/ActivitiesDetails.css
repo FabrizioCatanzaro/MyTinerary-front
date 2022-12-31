@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primario: #24265D;
+    --naranja: #F68712;
+    --celeste: #51ADE5;
+    --azul-claro: #2C3892;
+}
+
+#containerActivityDetails{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardActivity{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin: 1rem 0;
+    border-radius: 3rem 0 3rem 0;
+}
+
+.containerImgActivity{
+    height: 50%;
+    width: 100%;
+}
+
+
+.imgActivity{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3rem 0 0 0;
+}
+
+.titleActivity{
+    font-size: 1rem;
+    color: var(--naranja);
+    margin-top: 1.5rem;
+}
+
+.bodyCardActivity{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .5rem;
+}
+
+.paragraphActivity{
+    font-size: .8rem;
+}
+
+.priceActivity{
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: var(--celeste);
+    font-weight: bold;
+}
+
+.cardActivity:hover{
+    background-color: rgba(0, 0, 0, 0.87);
+    box-shadow: 10px 10px 10px black;
+    transition: .5s ease;
+}
+
+.reactionsDetails{
+    display: flex;
+    justify-content: center;
+    background-color: #fce8c9;
+    border-bottom-right-radius: 3rem;
+    border: 5px solid black;
+}
+
+@media screen and (max-width:1150px){
+    .cardActivity{
+        width: 60%;
+        min-height: 50rem;
+    }
+
+    .titleActivity{
+        font-size: 1.8rem;
+        margin-top: .3rem;
+    }
+
+    .paragraphActivity{
+        font-size: 1.3rem;
+        padding: 0 .5rem;
+    }
+
+    .priceActivity{
+        font-size: 1.6rem;
+        margin: 0;
+    }
+}   
+
+@media screen and (max-width:600px){
+    .cardActivity{
+        width: 80%;
+        min-height: 45rem;
+    }
+
+    .titleActivity{
+        font-size: 1.4rem;
+    }
+
+    .paragraphActivity{
+        font-size: 1.1rem;
+    }
+}
